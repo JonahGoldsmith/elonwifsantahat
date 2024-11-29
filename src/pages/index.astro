@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ElonWifSantaHat - The Festive Crypto Sensation">
+	<main>
+		<div class="banner">
+			<img src="/elonbanner.png" alt="Festive Banner" class="banner-image" />
+			<h1>ElonWifSantaHat To The Moon!</h1>
+			<p class="tagline">The Most Festive Meme Token of 2024 🎅<br> Creating generational wealth for all!</p>
+		</div>
+
+		<section class="why-buy">
+			<h2>Why Buy $ELONHAT?</h2>
+			<div class="features">
+				<div class="feature">
+					<h3>🚀 Massive Growth Potential</h3>
+					<p>Early investors get the best opportunities in this festive season!</p>
+				</div>
+				<div class="feature">
+					<h3>🎄 Seasonal Hype</h3>
+					<p>Combining the power of Elon's influence with holiday spirit</p>
+				</div>
+				<div class="feature">
+					<h3>💪 Strong Community</h3>
+					<p>Join our rapidly growing community of festive crypto enthusiasts</p>
+				</div>
+				<div class="feature">
+					<h3>🔒 Safe & Secure</h3>
+					<p>Contract audited and liquidity locked for your peace of mind</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="token-info">
+			<h2>Token Information</h2>
+			<div class="token-details">
+				<p class="token-address">
+					<span>Token Address:</span>
+					<code>0x000...000</code>
+					<button class="copy-btn" onclick="navigator.clipboard.writeText('0x000...000')">
+						Copy
+					</button>
+				</p>
+			</div>
+			<div class="cta-buttons">
+				<a href="https://dexscreener.com" class="primary-btn" target="_blank" rel="noopener noreferrer">
+					View on DexScreener
+				</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 0 auto;
+		padding: 0;
+		color: white;
+	}
+
+	.banner {
+		padding: 4rem 2rem;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		margin: 0;
+		font-weight: 900;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+
+	.tagline {
+		font-size: 1.5rem;
+		margin-top: 1rem;
+		opacity: 0.9;
+	}
+
+	.why-buy {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		color: #ff4444;
+	}
+
+	.features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.feature {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 1.5rem;
+		border-radius: 10px;
+		transition: transform 0.3s ease;
+	}
+
+	.feature:hover {
+		transform: translateY(-5px);
+	}
+
+	.feature h3 {
+		color: #ff4444;
+		margin-bottom: 1rem;
+	}
+
+	.token-info {
+		max-width: 800px;
+		margin: 3rem auto;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.token-details {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 10px;
+		margin-bottom: 2rem;
+	}
+
+	.token-address {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		font-size: 1.1rem;
+	}
+
+	code {
+		background: rgba(0, 0, 0, 0.3);
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		font-family: monospace;
+	}
+
+	.copy-btn {
+		background: #ff4444;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		color: white;
+		cursor: pointer;
+		transition: background 0.3s ease;
+	}
+
+	.copy-btn:hover {
+		background: #ff0000;
+	}
+
+	.cta-buttons {
+		margin-top: 2rem;
+	}
+
+	.primary-btn {
+		display: inline-block;
+		background: #ff4444;
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 50px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.2rem;
+		transition: transform 0.3s ease, background 0.3s ease;
+	}
+
+	.primary-btn:hover {
+		transform: translateY(-2px);
+		background: #ff0000;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.tagline {
+			font-size: 1.2rem;
+		}
+
+		.features {
+			grid-template-columns: 1fr;
+		}
+
+		.token-address {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+	}
+</style>
